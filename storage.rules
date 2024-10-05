@@ -1,0 +1,38 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Allow anyone to read any file
+    match /{allPaths=**} {
+      allow read;
+      // Allow admins to write to any file
+      allow write: if request.auth.token.role == 'admin';
+    }
+
+    // * Add rules for other top-level folders here
+
+    // match /sponsorImages/{allPaths=**} {
+    //   // Rules for sponsorImages here
+    // }
+
+    match /displayPicture/{allPaths=**} {
+      allow write: if request.auth != null && resource.contentType.matches('image/.*');
+    }
+
+    match /articleImages/{allPaths=**} {
+      allow write: if request.auth.token.role == 'editor' && resource.contentType.matches('image/.*');
+    }
+
+    // match /eventImages/{allPaths=**} {
+    //   // Rules for images associated with events here
+    // }
+
+    match /galleryImages/{allPaths=**} {
+      allow write: if request.auth.token.role == 'editor' && resource.contentType.matches('image/.*');
+    }
+
+    // match /causesImages/{allPaths=**} {
+    //   // Rules for images related to causes here
+    // }
+  }
+}

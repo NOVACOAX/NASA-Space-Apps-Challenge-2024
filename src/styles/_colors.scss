@@ -1,0 +1,50 @@
+@layer base {
+  :root {
+    // The following variables are rgb() values for using in the Tailwind. You can still use them in other contexts like in other .scss files or in Vue's scoped styling. You will need to wrap the values in the necessary function in order to use them.
+    // E.g. rgb(--primary / 0.5);
+
+    // Primary
+    --primary: 181 36 35;
+    --primary-on: var(--white);
+    --primary-container: 255 218 214;
+    --primary-on-container: 65 0 2;
+    --primary-inverse: 255 180 172;
+
+    // Secondary
+    --secondary: 153 64 96;
+    --secondary-on: var(--white);
+    --secondary-container: 255 217 226;
+    --secondary-on-container: 65 0 29;
+
+    // Tertiary
+    --tertiary: 0 98 159;
+    --tertiary-on: var(--white);
+    --tertiary-container: 208 228 255;
+    --tertiary-on-container: 0 29 52;
+
+    // Error
+    --error: 182 36 29;
+    --error-on: var(--white);
+    --error-container: 255 218 213;
+    --error-on-container: 65 0 1;
+
+    // Surface
+    --surface: 255 251 255;
+    --surface-on: 32 26 25;
+    --surface-variant: 245 221 219;
+    --surface-on-variant: 83 67 65;
+    --surface-inverse: 54 47 46;
+    --surface-on-inverse: 251 238 236;
+    --surface-tint: 181 36 35;
+
+    // Outline
+    --outline: 133 115 113;
+    --outline-variant: 216 194 191;
+
+    --white: 255 255 255;
+    --black: 17 17 17;
+    --shadow: var(--true-black);
+    --scrim: var(--true-black);
+    --true-black: 0 0 0;
+  }
+}
