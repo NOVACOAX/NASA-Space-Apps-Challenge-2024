@@ -45,7 +45,7 @@
       />
     </div>
     <div class="md:hidden min-w-full min-h-screen max-h-screen overflow-clip"> 
-      <img class="min-w-full min-h-screen" src="@/assets/hero-bg-mobile.jpg" alt="Background image">
+      <img class="min-w-full min-h-screen" src="@/assets/hero-bg-mobile.png" alt="Background image">
     </div>
   </div>
 </template>

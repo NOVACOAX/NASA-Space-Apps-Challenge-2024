@@ -5,12 +5,15 @@
     <WelcomeSectionVue />
 
     <!-- * sub Map -->
-     <SubMap/>
+    <SubMap />
 
     <!-- * Main Map -->
-     <MainMap/>
+    <MainMap />
 
-    <FooterComponent/>
+    <!-- * Services -->
+    <ServicesView />
+
+    <FooterComponent />
   </main>
 </template>
 
@@ -26,4 +29,5 @@ import CustomButton from '../../components/CustomButton.vue';
 import { Icon } from '@iconify/vue';
 import MainMap from './MainMap.vue';
 import SubMap from './subMap.vue';
+import ServicesView from './ServicesView.vue';
 </script>

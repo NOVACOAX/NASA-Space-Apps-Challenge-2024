@@ -27,6 +27,12 @@ const routes = [
     component: () => import('@/views/About/About.vue'),
   },
   {
+    path: '/region/:region',
+    name: 'region',
+    component: () => import('@/views/RegionsView.vue'),
+    props: (route) => ({ page: route.params.region }),
+  },
+  {
     path: '/contact',
     name: 'ContactUs',
     component: () => import('@/views/ContactUs/ContactUsView.vue'),
@@ -59,7 +65,7 @@ router.beforeEach((to) => {
 
   // Change page title
   if (metadata.title) metadata.addTitleToHead()
-  else Metadata.addTitleToHead('This Is Me Community')
+  else Metadata.addTitleToHead('Her Climate')
 
   // Add meta tags to head
   if (metadata.metaTags.length > 0) MetaTag.addMetaTagsToHead(metadata.metaTags)

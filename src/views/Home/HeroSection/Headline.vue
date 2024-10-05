@@ -11,30 +11,31 @@ import CustomButton from '../../../components/CustomButton.vue';
       <h1
         class="text-display-small font-extrabold leading-relaxed uppercase sm:mb-4 sm:text-5xl text-primary-inverse w-max"
       >
-        This is Me
+        Her Climate
       </h1>
 
-      <img class="" src="@/assets/community.svg" alt="Community" />
+      <!-- <img class="" src="@/assets/community.svg" alt="Community" /> -->
 
       <img
         src="@/assets/archs.svg"
         alt="arcs"
         :class="[
-          'max-xs:hidden absolute right-0 z-20 scale-50 -top-[73%]' /* Mobile and below */,
-          'sm:scale-[70%] sm:-top-[70%] sm:-right-[35%]',
+          'max-sm:hidden absolute right-0 z-20 scale-50 -top-[83%]' /* Mobile and below */,
+          'sm:scale-[70%] sm:-top-[90%] sm:-right-[35%]',
           'lg:scale-[90%]',
         ]"
       />
     </div>
 
     <p class="leading-normal text-white md:max-w-lg">
-      A community challenging the way we exist by finding ways to leverage
-      humanity for good and achieve sustainable development goals.
+      A gender-climate model focused on leveraging available resources to
+      empower the girl-child against a backdrop of uncertainties posed by
+      climate change. Her empowerment is our empowerment!
     </p>
 
     <!-- Link to Donate page -->
-    <CustomButton class="w-full md:max-w-[15rem] min-w-max"
+    <!-- <CustomButton class="w-full md:max-w-[15rem] min-w-max"
       >Donate</CustomButton
-    >
+    > -->
   </div>
 </template>
