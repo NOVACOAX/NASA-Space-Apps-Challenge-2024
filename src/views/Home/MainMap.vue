@@ -37,17 +37,45 @@
       <img src="@/assets/kenya3.png" alt="Kenya" class="w-full" />
 
       <!-- Absolute pins (example) -->
-      <RouterLink
+      <!-- <RouterLink
         to="region/western"
         class="pin"
         :style="{ top: '40%', left: '50%' }"
       >
         <Icon icon="line-md:my-location-loop" width="40px" height="40px" />
+      </RouterLink> -->
+      <RouterLink
+        to="region/central"
+        class="pin text-green-600"
+        :style="{ top: '56%', left: '42%' }"
+      >
+        <Icon icon="fa6-solid:location-pin" width="40px" height="40px" />
+      </RouterLink>
+      <RouterLink
+        to="region/western"
+        class="pin text-green-600"
+        :style="{ top: '51%', left: '4%' }"
+      >
+        <Icon icon="fa6-solid:location-pin" width="40px" height="40px" />
+      </RouterLink>
+      <RouterLink
+        to="region/northern"
+        class="pin text-green-600"
+        :style="{ top: '30%', left: '50%' }"
+      >
+        <Icon icon="fa6-solid:location-pin" width="40px" height="40px" />
       </RouterLink>
       <RouterLink
         to="region/eastern"
-        class="pin"
-        :style="{ top: '60%', left: '30%' }"
+        class="pin text-green-600"
+        :style="{ top: '68%', left: '53%' }"
+      >
+        <Icon icon="fa6-solid:location-pin" width="40px" height="40px" />
+      </RouterLink>
+      <RouterLink
+        to="region/coastal"
+        class="pin text-green-600"
+        :style="{ top: '83%', left: '60%' }"
       >
         <Icon icon="fa6-solid:location-pin" width="40px" height="40px" />
       </RouterLink>
@@ -71,6 +99,5 @@ import { RouterLink } from 'vue-router';
     -50%,
     -100%
   ); /* Center the pin at the exact coordinates */
-  color: red; /* Customize pin color */
 }
 </style>

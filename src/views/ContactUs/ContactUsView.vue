@@ -40,8 +40,8 @@
             <p class="text-primary-on-container">We'd love to hear from you. Reach out to us for any inquiries or support.
             </p>
             <h5><strong>Location :</strong> 123 Charity Street, Nairobi, Kenya</h5>
-            <h5><strong>Phone :</strong> +254746623164</h5>
-            <h5><strong>Email :</strong> talktothisisme@gmail.com</h5>
+            <h5><strong>Phone :</strong> +254722123456</h5>
+            <h5><strong>Email :</strong> info@herclimate.com</h5>
           </div>
         </div>
       </div>

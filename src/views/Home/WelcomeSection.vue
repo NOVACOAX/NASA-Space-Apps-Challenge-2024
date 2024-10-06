@@ -2,7 +2,6 @@
 import CustomSection from '@/components/CustomSection/CustomSection.vue';
 import CustomSectionHeader from '@/components/CustomSection/CustomSectionHeader.vue';
 import CustomButton from '@/components/CustomButton.vue';
-import hands from '@/assets/hands-in-circle.jpg';
 </script>
 
 <template>
@@ -10,15 +9,13 @@ import hands from '@/assets/hands-in-circle.jpg';
     class="flex flex-col items-center md:flex-row gap-x-12 gap-y-8"
   >
     <!-- Left side images -->
-    <div
-      class="w-full sm:w-7/12 md:w-1/2"
-    >
+    <div class="w-full sm:w-7/12 md:w-1/2">
       <!-- Need to replace these with the original images from the design  -->
       <div
-        class="p-2 md:p-3 rounded-md  bg-[rgba(255_180_172_/_0.30)] aspect-square w-9/12"
+        class="p-2 md:p-3 rounded-md bg-[rgba(255_180_172_/_0.30)] aspect-square w-8/12"
       >
         <img
-          src="https://unsplash.com/photos/4LunKr1gTd8/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8OXx8Y2hpbGQlMjBzbWlsaW5nfGVufDB8fHx8MTY5NDExMjUwNXww&force=true&w=1920"
+          src="@/assets/sdg5.png"
           alt=""
           class="rounded-md w-full h-full aspect-square"
         />
@@ -27,23 +24,38 @@ import hands from '@/assets/hands-in-circle.jpg';
       <div
         class="ms-auto mt-[-28%] z-10 p-2 md:p-3 rounded-md bg-[rgba(255_180_172_/_0.30)] aspect-square w-7/12"
       >
-        <img :src="hands" alt="" class="rounded-md w-full h-full aspect-square" />
+        <img
+          src="@/assets/sdg13.png"
+          alt=""
+          class="rounded-md w-full h-full aspect-square"
+        />
       </div>
     </div>
 
     <div class="flex flex-col flex-1 gap-6">
       <CustomSectionHeader
-        heading="Welcome to This Is Me"
-        title="Your Support is Our Strength.​"
+        heading="Welcome to Her Climate"
+        title="Empowering Women, Building Resilience."
       />
 
       <p class="leading-relaxed">
-        At This Is Me, we are a loving and empowering community of young people.
-        Together, we create a positive loop of support and growth, striving to
-        make a difference in our communities and uplift each other to reach new
-        heights.
+        At Her Climate, we recognize the deep connection between gender equality
+        and climate action. Women, especially in vulnerable communities, are at
+        the forefront of both the impacts and solutions to climate change. We
+        strive to create an inclusive space where women can lead the charge
+        towards a more sustainable and equitable future.
       </p>
-      <RouterLink class="md:w-fit flex items-center justify-center gap-4 px-5 py-2 font-semibold rounded-lg bg-primary text-primary-on" to="/about">Read more</RouterLink>
+      <p class="leading-relaxed">
+        Through education, access to resources, and leadership opportunities, we
+        empower women to shape climate solutions that benefit everyone. Join us
+        as we work together to build stronger communities and a more resilient
+        planet for all.
+      </p>
+      <RouterLink
+        class="md:w-fit flex items-center justify-center gap-4 px-5 py-2 font-semibold rounded-lg bg-primary text-primary-on"
+        to="/about"
+        >Read more</RouterLink
+      >
     </div>
   </CustomSection>
 </template>

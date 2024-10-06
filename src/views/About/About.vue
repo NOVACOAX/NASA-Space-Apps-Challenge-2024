@@ -26,33 +26,32 @@
       </template>
     </HeroSectionComponent>
 
+    <!-- * Gender -->
     <CustomSection
       class="flex flex-col-reverse items-center md:flex-row gap-x-12 gap-y-8"
     >
       <div class="flex flex-col flex-1 gap-6 text-body-medium">
-        <CustomSectionHeader
-          title="Building Stronger, Resilient Communities​"
-        />
+        <CustomSectionHeader title="Gender Equality" />
         <p class="text-body-large">
-          At This Is Me, we understand that there are countless challenges faced
-          by different groups in society. These range from socio-economic
-          struggles to mental health issues, and even include the challenge of
-          feeling disconnected and unsupported.
+          Gender equality refers to the state in which access to rights and
+          opportunities is unaffected by one’s gender. The UNDP, in its 2015
+          proposition for Vision 2030, outlined gender equality as a key area of
+          concern. The disparities that exist between males and their female
+          counterparts are vast.
         </p>
         <p class="">
-          Our mission is to counteract these issues by creating a loving and
-          empowering community where young people can find support,
-          companionship, and empowerment. Our initiatives aim to provide relief
-          where it's needed most, extending a hand to those who are struggling,
-          while also creating a platform for individuals to make a difference in
-          the lives of others. We believe that through collective efforts,
-          empathy, and a shared vision, we can build stronger and more resilient
-          communities.
+          Gender equality empowers everyone to break harmful stereotypes and
+          pursue their dreams regardless of societal expectations and
+          limitations. This goal seeks to end all forms of discrimination
+          against women, emancipate them from all forms of violence, end harmful
+          practices like FGM and early marriages, enhance the use of ICT to
+          empower women and girls, and ensure full and active participation of
+          women in leadership positions at all levels of society.
         </p>
         <p class="">
-          By joining forces, we strive not only to alleviate the burdens of
-          those in need but also to catalyze a positive societal change that
-          endures.
+          Achieving gender equality fosters an environment where everyone feels
+          safe, respected, and valued, and subsequently helps to improve the
+          economic growth and development of a country.
         </p>
       </div>
       <div class="w-full sm:w-7/12 md:w-1/2">
@@ -61,7 +60,7 @@
           class="p-2 md:p-3 rounded-md bg-[rgba(255_180_172_/_0.30)] aspect-square w-9/12"
         >
           <img
-            src="https://unsplash.com/photos/4LunKr1gTd8/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8OXx8Y2hpbGQlMjBzbWlsaW5nfGVufDB8fHx8MTY5NDExMjUwNXww&force=true&w=1920"
+            src="@/assets/sdg5.png"
             alt=""
             class="rounded-md w-full h-full aspect-square"
           />
@@ -79,6 +78,7 @@
       </div>
     </CustomSection>
 
+    <!-- * Climate -->
     <CustomSection
       class="flex flex-col items-center md:flex-row gap-x-12 gap-y-8"
     >
@@ -88,7 +88,7 @@
           class="ms-auto p-2 md:p-3 rounded-md bg-[rgba(255_180_172_/_0.30)] aspect-square w-9/12"
         >
           <img
-            src="https://unsplash.com/photos/4LunKr1gTd8/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8OXx8Y2hpbGQlMjBzbWlsaW5nfGVufDB8fHx8MTY5NDExMjUwNXww&force=true&w=1920"
+            src="@/assets/sdg13.png"
             alt=""
             class="rounded-md w-full h-full aspect-square"
           />
@@ -98,80 +98,158 @@
           class="me-auto mt-[-28%] z-10 p-2 md:p-3 rounded-md bg-[rgba(255_180_172_/_0.30)] aspect-[3/2] w-7/12"
         >
           <img
-            src="@/assets/hands-in-circle.jpg"
+            src="@/assets/climate2.png"
             alt=""
             class="rounded-md w-full h-full aspect-[3/2]"
           />
         </div>
       </div>
       <div class="flex flex-col flex-1 gap-6 text-body-medium">
-        <CustomSectionHeader
-          title="Building Stronger, Resilient Communities​"
-        />
+        <CustomSectionHeader title="Climate Change" />
         <p class="text-body-large">
-          At This Is Me, we understand that there are countless challenges faced
-          by different groups in society. These range from socio-economic
-          struggles to mental health issues, and even include the challenge of
-          feeling disconnected and unsupported.
+          Climate change refers to long-term shifts in temperature and weather
+          patterns due to natural variability or human activities. While change
+          is a natural part of Earth's variability over time, human activities
+          have recently posed a significant hazard to the future of the planet
+          by exacerbating climate changes.
         </p>
         <p class="">
-          Our mission is to counteract these issues by creating a loving and
-          empowering community where young people can find support,
-          companionship, and empowerment. Our initiatives aim to provide relief
-          where it's needed most, extending a hand to those who are struggling,
-          while also creating a platform for individuals to make a difference in
-          the lives of others. We believe that through collective efforts,
-          empathy, and a shared vision, we can build stronger and more resilient
-          communities.
+          Human activities such as burning fossil fuels, deforestation, and
+          intensive agriculture release greenhouse gases like carbon dioxide and
+          methane into the upper atmosphere. These gases form a blanket-like
+          layer, trapping heat in the lower atmosphere, leading to global
+          temperature rises—commonly referred to as global warming. This warming
+          results in melting glaciers, rising sea levels, and adverse weather
+          conditions like droughts, floods, and heat waves.
         </p>
         <p class="">
-          By joining forces, we strive not only to alleviate the burdens of
-          those in need but also to catalyze a positive societal change that
-          endures.
+          These extreme conditions affect agricultural yields, which heavily
+          depend on climate. Africa, with its economy largely reliant on
+          agriculture, faces significant impacts from these changes, affecting
+          human lives at both national and global levels.
         </p>
       </div>
     </CustomSection>
 
-    <div class="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
-    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
-      <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-        <div class="lg:pr-4">
-          <div class="lg:max-w-lg">
-            <p class="text-base font-semibold leading-7 text-primary">Deploy faster</p>
-            <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A better workflow</h1>
-            <p class="mt-6 text-xl leading-8 text-gray-700">Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas.</p>
+    <!-- * combination -->
+    <div
+      class="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0"
+    >
+      <div
+        class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10"
+      >
+        <!-- Left Section -->
+        <div
+          class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8"
+        >
+          <div class="lg:pr-4">
+            <div class="lg:max-w-lg">
+              <p class="text-base font-semibold leading-7 text-primary">
+                Correlation between Gender and Climate
+              </p>
+              <h1
+                class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+              >
+                How Climate Change Affects Vulnerability
+              </h1>
+              <p class="mt-6 text-xl leading-8 text-gray-700">
+                Climate change affects people differently, based on
+                vulnerability factors such as gender, social status, poverty
+                levels, and livelihood options. Women, especially in regions
+                like Kenya, are particularly affected due to their dependence on
+                natural resources for productive activities.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-        <img class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" src="https://tailwindui.com/plus/img/component-images/dark-project-app-screenshot.png" alt="" />
-      </div>
-      <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-        <div class="lg:pr-4">
-          <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
-            <p>Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id.</p>
-            <ul role="list" class="mt-8 space-y-8 text-gray-600">
-              <li class="flex gap-x-3">
-                <Icon icon="line-md:cloud-up" class="mt-1 h-8 w-8 flex-none text-primary" aria-hidden="true" />
-                <span><strong class="font-semibold text-gray-900">Push to deploy.</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</span>
-              </li>
-              <li class="flex gap-x-3">
-                <Icon icon="mdi:lock" class="mt-1 h-8 w-8 flex-none text-primary" aria-hidden="true" />
-                <span><strong class="font-semibold text-gray-900">SSL certificates.</strong> Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.</span>
-              </li>
-              <li class="flex gap-x-3">
-                <Icon icon="mdi:usb-flash-drive-outline" class="mt-1 h-8 w-8 flex-none text-primary" aria-hidden="true" />
-                <span><strong class="font-semibold text-gray-900">Database backups.</strong> Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</span>
-              </li>
-            </ul>
-            <p class="mt-8">Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.</p>
-            <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">No server? No problem.</h2>
-            <p class="mt-6">Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam turpis ipsum eu a sed convallis diam.</p>
+
+        <!-- Right Section with Image -->
+        <div
+          class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden"
+        >
+          <img
+            class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+            src="@/assets/vulnarability.png"
+            alt=""
+          />
+        </div>
+
+        <!-- Bottom Left Section -->
+        <div
+          class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8"
+        >
+          <div class="lg:pr-4">
+            <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
+              <p>
+                In Kenya, women make up 75% of small-scale agricultural farmers,
+                and their dependence on natural resources highlights their
+                vulnerability amidst climatic uncertainty. As primary
+                caregivers, they are responsible for securing food, water, and
+                fuel for cooking and heating. Despite doing much of the
+                agricultural work and contributing to production, women only
+                earn a fraction of the income and own a small percentage of
+                assets.
+              </p>
+
+              <ul role="list" class="mt-8 space-y-8 text-gray-600">
+                <li class="flex gap-x-3">
+                  <Icon
+                    icon="mdi:lock-outline"
+                    class="mt-1 h-8 w-8 flex-none text-primary"
+                    aria-hidden="true"
+                  />
+                  <span
+                    ><strong class="font-semibold text-gray-900"
+                      >Limited Access to Resources.</strong
+                    >
+                    Women face barriers to information, technologies, and
+                    financial services, limiting their ability to adapt to and
+                    mitigate climate challenges.</span
+                  >
+                </li>
+                <li class="flex gap-x-3">
+                  <Icon
+                    icon="mdi:account-off-outline"
+                    class="mt-1 h-8 w-8 flex-none text-primary"
+                    aria-hidden="true"
+                  />
+                  <span
+                    ><strong class="font-semibold text-gray-900"
+                      >Underrepresentation in Leadership.</strong
+                    >
+                    Women are often excluded from decision-making processes and
+                    leadership roles, which hinders the development of new ideas
+                    and strategies to tackle climate change.</span
+                  >
+                </li>
+                <li class="flex gap-x-3">
+                  <Icon
+                    icon="mdi:hand-heart-outline"
+                    class="mt-1 h-8 w-8 flex-none text-primary"
+                    aria-hidden="true"
+                  />
+                  <span
+                    ><strong class="font-semibold text-gray-900"
+                      >Empowering Women.</strong
+                    >
+                    Providing women with education, access to resources, and
+                    decision-making roles can create more sustainable,
+                    community-driven solutions to climate change.</span
+                  >
+                </li>
+              </ul>
+
+              <p class="mt-8">
+                A more equitable society where women’s contributions and
+                perspectives are valued ensures more effective solutions for
+                climate change, leading to equal outcomes and greater prosperity
+                for all.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
     <FooterComponent />
   </main>
