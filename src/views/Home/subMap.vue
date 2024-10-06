@@ -1,8 +1,8 @@
 <template>
   <section class="px-4 mx-auto sm:px-[2%] md:px-[3%] w-full my-8">
     <CustomSectionHeader
-      heading="Data"
-      title="We Believe that We can Save More lives with you"
+      heading="Understanding the Numbers"
+      title="A Deeper Look at Data to Drive Informed Action"
     />
     <div class="flex flex-col-reverse md:flex-row gap-10 md:gap-6 py-10 items-center">
       <div class="w-full md:w-5/12">
