@@ -37,20 +37,19 @@
 <script setup>
 import { ref } from "vue";
 import CustomButton from '../CustomButton.vue';
-import { subscribe } from "@/firebase/index";
 import { toast } from "vue3-toastify";
 import "vue3-toastify/dist/index.css";
 const email = ref("");
 
-const submitForm = async () => {
-  if (email.value) {
-    const response = await subscribe(email.value);
-    if (response.success === true) {
-      email.value = "";
-      toast.success("Never miss an update. You are amazing ❤️");
-    } else {
-      toast.error(`Email subscription failed: ${response.error}`);
-    }
-  }
-};
+// const submitForm = async () => {
+//   if (email.value) {
+//     const response = await subscribe(email.value);
+//     if (response.success === true) {
+//       email.value = "";
+//       toast.success("Never miss an update. You are amazing ❤️");
+//     } else {
+//       toast.error(`Email subscription failed: ${response.error}`);
+//     }
+//   }
+// };
 </script>

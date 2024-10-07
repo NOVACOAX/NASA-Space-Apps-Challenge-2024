@@ -86,7 +86,6 @@
 </main></template>
 
 <script>
-import { callUnsubscribe } from '@/firebase/index';
 import { ref, onMounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import { toast } from "vue3-toastify";
@@ -100,23 +99,23 @@ export default {
     const email = ref(null);
     email.value = route.query.email || null;
 
-    const unsubscribe = async () => {
-      if (email.value) {
-        const response = await callUnsubscribe(email.value);
-        if (response.success) {
-          unsubscribed.value = true;
-          email.value = '';
-          toast.success("successfully unsubscribed.")
-          setTimeout(() => {
-          router.push({ name: 'Home' });
-        }, 3000);
-        } else {
-          unsubscribed.value = false;
-          console.log(response);
-          toast.error(`Error unsubscribing: ${response.error}`);
-        }
-      }
-    };
+    // const unsubscribe = async () => {
+    //   if (email.value) {
+    //     const response = await callUnsubscribe(email.value);
+    //     if (response.success) {
+    //       unsubscribed.value = true;
+    //       email.value = '';
+    //       toast.success("successfully unsubscribed.")
+    //       setTimeout(() => {
+    //       router.push({ name: 'Home' });
+    //     }, 3000);
+    //     } else {
+    //       unsubscribed.value = false;
+    //       console.log(response);
+    //       toast.error(`Error unsubscribing: ${response.error}`);
+    //     }
+    //   }
+    // };
 
     onMounted(() => {
       if (email.value) {

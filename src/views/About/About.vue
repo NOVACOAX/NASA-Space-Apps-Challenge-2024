@@ -1,12 +1,4 @@
 <template>
-  <LightBox
-    :showLightbox="showLightbox"
-    :imageList="images"
-    :currentImageSrc="currentImageSrc"
-    :downloadable="true"
-    :carousel="true"
-    @closeLightbox="hideLightbox"
-  />
   <main>
     <HeaderComponent />
     <HeroSectionComponent>
@@ -259,77 +251,10 @@
 import HeroSectionComponent from '@/components/HeroSectionComponent.vue';
 import HeaderComponent from '@/components/HeaderComponent.vue';
 import FooterComponent from '@/components/FooterComponent/FooterComponent.vue';
-import Testimonials from '@/components/Testimonials.vue';
-import SocialProof from '@/components/SocialProof.vue';
-import LightBox from '@/components/LightBox.vue';
 import CustomSection from '@/components/CustomSection/CustomSection.vue';
 import CustomSectionHeader from '@/components/CustomSection/CustomSectionHeader.vue';
-import Card from '@/views/Home/ImpactSection/Card.vue';
 import { Icon } from '@iconify/vue';
-import { ref } from 'vue';
 
-const imgUrl = (image) => {
-  return new URL(`../assets/${image}`, import.meta.url).href;
-};
-const showLightbox = ref(false);
-const currentImageSrc = ref('');
-const openLightbox = (currentImg) => {
-  currentImageSrc.value = currentImg;
-  showLightbox.value = true;
-};
-
-const hideLightbox = () => {
-  showLightbox.value = false;
-};
-const images = ref([
-  { src: 'https://source.unsplash.com/ztpUS4N1xhY' },
-  { src: 'https://source.unsplash.com/mPFSPqZOO7s' },
-  { src: 'https://source.unsplash.com/xoTt2fjs7d0' },
-  { src: 'https://source.unsplash.com/uPEnxrdSKIw' },
-  { src: 'https://source.unsplash.com/hFKZ5-OT9Ys' },
-  { src: 'https://source.unsplash.com/NTGg2rtWDwg' },
-  { src: 'https://source.unsplash.com/hqnQWmIt3cY' },
-  { src: 'https://source.unsplash.com/uyX3qAQhZVA' },
-  { src: 'https://source.unsplash.com/Vc2dD4l57og' },
-]);
-
-const members = [
-  {
-    image:
-      'https://images.unsplash.com/photo-1678346496584-e81410d1e697?auto=format&fit=crop&q=80&w=1349&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    name: 'Cyntia Nkania',
-    role: 'Founder & Chair',
-    ig: 'https://www.instagram.com/_nkanai/',
-  },
-  {
-    image:
-      'https://images.unsplash.com/photo-1697660981480-f55beb296193?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    name: 'Jonathan Githire',
-    role: 'Creative Director & Chair',
-    ig: 'https://www.instagram.com/_jonnaahhh/',
-  },
-  {
-    image:
-      'https://images.unsplash.com/photo-1693438672953-409b661134fd?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    name: 'Cyntia Mukuria',
-    role: 'Manager',
-    ig: 'https://www.instagram.com/itsmemukuria/',
-  },
-  {
-    image:
-      'https://images.unsplash.com/photo-1697725351522-7d63b2e64698?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    name: 'Lisa Wanjiku',
-    role: 'Creative Manager',
-    ig: 'https://www.instagram.com/lisa__wanjiku/',
-  },
-  {
-    image:
-      'https://images.unsplash.com/photo-1697472925037-e38438b132b0?auto=format&fit=crop&q=80&w=1365&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    name: 'Hugh Herschell',
-    role: 'IT Lead',
-    ig: 'https://www.instagram.com/novacoax/',
-  },
-];
 </script>
 
 <style scoped lang="scss"></style>

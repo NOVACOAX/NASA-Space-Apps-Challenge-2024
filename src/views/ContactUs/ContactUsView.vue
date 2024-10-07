@@ -60,34 +60,34 @@ import CustomButton from '@/components/CustomButton.vue';
 import { ref } from 'vue';
 import { toast } from "vue3-toastify";
 import "vue3-toastify/dist/index.css";
-import { sendMessage } from '@/firebase/index';
+// import { sendMessage } from '@/firebase/index';
 
 const name = ref("");
 const email = ref("");
 const phone = ref("");
 const message = ref("");
 
-const submitForm = async () => {
-  if (email.value && name.value && message.value) {
-    const result = await sendMessage(
-      name.value,
-      email.value,
-      phone.value,
-      message.value
-    );
-    if (result.success === true) {
-      name.value = "";
-      email.value = "";
-      phone.value = "";
-      message.value = "";
-      toast.success(
-        "Message sent successfully! \nWe will get to you as soon as possible"
-      );
-    } else {
-      toast.error(`Message sending failed: ${result.error}`);
-    }
-  }
-}
+// const submitForm = async () => {
+//   if (email.value && name.value && message.value) {
+//     const result = await sendMessage(
+//       name.value,
+//       email.value,
+//       phone.value,
+//       message.value
+//     );
+//     if (result.success === true) {
+//       name.value = "";
+//       email.value = "";
+//       phone.value = "";
+//       message.value = "";
+//       toast.success(
+//         "Message sent successfully! \nWe will get to you as soon as possible"
+//       );
+//     } else {
+//       toast.error(`Message sending failed: ${result.error}`);
+//     }
+//   }
+// }
 
 </script>
 

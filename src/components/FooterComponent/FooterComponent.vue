@@ -1,15 +1,44 @@
 <template>
   <footer class="pt-1 xs:pt-4 bg-tertiary-on-container text-tertiary-container">
-    <CustomSection class="flex flex-wrap justify-between max-w-md gap-6 md:max-w-full">
+    <CustomSection
+      class="flex flex-wrap justify-between max-w-md gap-6 md:max-w-full"
+    >
       <LogoDescription class="w-full lg:w-56" />
       <QuickLinks class="" />
       <LegalLinks class="" />
       <Newsletter class="w-full md:max-w-fit" />
     </CustomSection>
 
-    <div class="container p-4 mx-auto text-label-small text-center border-t border-tertiary">
-      Designed and developed by
-      <a class="underline text-outline-variant" href="https://github.com/NOVACOAX">Novacoax</a>
+    <div
+      class="container p-4 mx-auto text-label-small text-center border-t border-tertiary"
+    >
+      <p>
+        Designed and developed by
+        <a
+          class="underline text-outline-variant"
+          href="https://github.com/NOVACOAX"
+          >Hugh</a
+        >
+        | Lewis | Elizabeth | Natalie | Brenda | Rogers | Jackson
+      </p>
+      <p class="pt-3">
+        <a
+          href="https://www.spaceappschallenge.org/"
+          target="_blank"
+          class="underline text-outline-variant"
+          rel="noopener noreferrer"
+          >NASA International Space App Challenge 2024</a
+        >
+        |
+        <a
+          href="https://www.spaceappschallenge.org/nasa-space-apps-2024/challenges/gender-and-climate/"
+          target="_blank"
+          class="underline text-outline-variant"
+          rel="noopener noreferrer"
+        >
+          Gender and Climate</a
+        >
+      </p>
     </div>
   </footer>
 </template>
@@ -18,7 +47,7 @@
 import CustomSection from '../CustomSection/CustomSection.vue';
 import { RouterLink } from 'vue-router';
 import { VueMarqueeSlider } from 'vue3-marquee-slider';
-import '@/../node_modules/vue3-marquee-slider/dist/style.css'
+import '@/../node_modules/vue3-marquee-slider/dist/style.css';
 
 import LogoDescription from './LogoDescription.vue';
 import QuickLinks from './QuickLinks.vue';
@@ -82,10 +111,7 @@ const splitSponsors = computed(() => {
 });
 </script>
 <style lang="scss" scoped>
-
-  img:hover {
-    transform: scale(1.1) translateZ(90px) !important;
-  }
-
-
+img:hover {
+  transform: scale(1.1) translateZ(90px) !important;
+}
 </style>

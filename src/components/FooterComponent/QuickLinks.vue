@@ -8,13 +8,12 @@ import { RouterLink } from 'vue-router';
 
     <div class="flex flex-col gap-2 text-[#D0E4FFB2]">
       <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About Us</RouterLink>
-      <RouterLink to="/causes">Causes</RouterLink>
+      <RouterLink to="/about">About</RouterLink>
+      <!-- <RouterLink to="/causes">Causes</RouterLink>
       <RouterLink to="/events">Events</RouterLink>
       <RouterLink to="">Blog Posts</RouterLink>
-      <RouterLink to="/faqs">FAQs</RouterLink>
+      <RouterLink to="/faqs">FAQs</RouterLink> -->
       <RouterLink to="/contact">Contact Us</RouterLink>
-      <RouterLink to="">Login</RouterLink>
     </div>
   </nav>
 </template>

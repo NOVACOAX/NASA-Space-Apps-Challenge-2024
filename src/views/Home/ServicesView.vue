@@ -21,11 +21,13 @@
               <div
                 class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-primary-container text-primary"
               >
-                <Icon icon="ri:service-fill" class="w-11 h-11" />
+                <Icon :icon="service.icon" class="w-11 h-11" />
               </div>
             </div>
             <div>
-              <h6 class="mb-2 font-semibold leading-5">{{ service.title }}</h6>
+              <h6 class="mb-2 text-title-large font-medium">
+                {{ service.title }}
+              </h6>
               <p class="mb-3 text-sm text-gray-900">
                 {{ service.content }}
               </p>
@@ -66,13 +68,34 @@ import { Icon } from '@iconify/vue';
 import ModalComponent from '@/components/ModalComponent.vue';
 import { ref } from 'vue';
 
+import img1 from '@/assets/jiwezeshe.jpeg';
+import img2 from '@/assets/innovation.jpeg';
+import img3 from '@/assets/forecast.jpeg';
+
 const services = ref([
   {
-    title: 'Climate News',
-    img: 'https://images.unsplash.com/photo-1523995462485-3d171b5c8fa9?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    title: 'Jiwezeshe Educational Training and Climate Awareness Program',
+    img: img1,
+    icon: 'ri:service-fill',
     content:
-      'Our website development service offers end-to-end solutions for creating and launching professional and visually appealing websites.',
-    bullets: ['Computers', 'Reference', 'Health'],
+      "Education is key to building climate resilience, and our solution provides women with tailored training programs on climate change and sustainable practices. Through a comprehensive curriculum and community-based trainings, we equip women with the knowledge to tackle environmental challenges. The impact doesn't stop there—each trained woman becomes an ambassador, sharing her skills and knowledge with others. This ripple effect empowers entire communities, fostering a cycle of education, action, and climate resilience.",
+    bullets: [],
+  },
+  {
+    title: 'Inovation For You',
+    img: img2,
+    icon: 'streamline:ai-science-spark',
+    content:
+      'Our platform connects women with transformative ideas and solutions that address both gender inequality and climate change. By providing access to resources like smart agriculture tools, clean energy solutions, and climate adaptation strategies, we empower women to drive change in their communities. Whether it’s through innovations like MySmartFarm, sustainable energy sources, or climate-smart agriculture practices, we ensure women are at the forefront of innovation and environmental action, fostering gender equality and stronger climate resilience.',
+    bullets: [],
+  },
+  {
+    title: 'Climate News and Weather Advisor',
+    img: img3,
+    icon: 'fluent:weather-blowing-snow-20-filled',
+    content:
+      'Staying informed is vital in the face of climate change. Our platform provides up-to-date weather forecasts and expert climate advisories tailored for women and their communities. Through both digital channels and a simple USSD service, we ensure that even those without internet access can receive accurate, localized information on extreme weather events and climate trends. With timely news and preparedness strategies delivered directly to mobile phones, we empower communities to prepare, respond, and adapt, reducing vulnerabilities and fostering resilience.',
+    bullets: [],
   },
 ]);
 </script>

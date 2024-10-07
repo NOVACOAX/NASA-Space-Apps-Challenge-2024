@@ -23,16 +23,14 @@
       </div>
     </template>
   </ModalComponent> -->
-  <section class="px-4 mx-auto sm:px-[2%] md:px-[3%] w-full my-8">
+  <section class="relative px-4 mx-auto sm:px-[2%] md:px-[3%] w-full my-8">
     <CustomSectionHeader
       heading="Regional Impact Insights"
-      title="Tailoring Solutions by Analyzing Data Across Different Regions"
+      title="Kenya Climate Justice Map: A Woman's Perspective"
     />
 
     <!-- Relative container for the map -->
-    <div
-      class="relative max-w-[90%] max-h-dvh md:w-[43%] mx-auto py-9"
-    >
+    <div class="relative max-w-[90%] max-h-dvh md:w-[43%] mx-auto py-9 max-md:pb-[86px]">
       <!-- The map image -->
       <img src="@/assets/kenya3.png" alt="Kenya" class="w-full" />
 
@@ -49,36 +47,61 @@
         class="pin text-green-600"
         :style="{ top: '56%', left: '42%' }"
       >
-        <Icon icon="fa6-solid:location-pin" width="40px" height="40px" />
+        <Icon icon="mdi:location" width="40px" height="40px" />
       </RouterLink>
       <RouterLink
         to="region/western"
-        class="pin text-green-600"
+        class="pin text-orange-400"
         :style="{ top: '51%', left: '4%' }"
       >
-        <Icon icon="fa6-solid:location-pin" width="40px" height="40px" />
+        <Icon icon="mdi:location" width="40px" height="40px" />
       </RouterLink>
       <RouterLink
         to="region/northern"
         class="pin text-green-600"
         :style="{ top: '30%', left: '50%' }"
       >
-        <Icon icon="fa6-solid:location-pin" width="40px" height="40px" />
+        <img src="@/assets/location-gif.gif" class="w-14 h-14" alt="img" />
+        <!-- <Icon icon="mdi:location" width="40px" height="40px" /> -->
       </RouterLink>
       <RouterLink
         to="region/eastern"
-        class="pin text-green-600"
+        class="pin text-orange-400"
         :style="{ top: '68%', left: '53%' }"
       >
-        <Icon icon="fa6-solid:location-pin" width="40px" height="40px" />
+        <Icon icon="mdi:location" width="40px" height="40px" />
       </RouterLink>
       <RouterLink
         to="region/coastal"
-        class="pin text-green-600"
+        class="pin text-red-800"
         :style="{ top: '83%', left: '60%' }"
       >
-        <Icon icon="fa6-solid:location-pin" width="40px" height="40px" />
+        <img src="@/assets/location-gif.gif" class="w-14 h-14" alt="img" />
+        <!-- <Icon icon="mdi:location" width="40px" height="40px" /> -->
       </RouterLink>
+    </div>
+    <div class="absolute bottom-0 md:bottom-[10%] left-5">
+      <h3 class="text-title-medium">Levels of Women's Disproportionality</h3>
+      <div class="rounded-lg border border-neutral-300 bg-white p-3 flex gap-2">
+        <div class="flex flex-row gap-2">
+          <div
+            class="bg-red-500 w-6 h-6 rounded-md border border-neutral-600"
+          ></div>
+          <p>High</p>
+        </div>
+        <div class="flex flex-row gap-2">
+          <div
+            class="bg-orange-400 w-6 h-6 rounded-md border border-neutral-600"
+          ></div>
+          <p>Medium</p>
+        </div>
+        <div class="flex flex-row gap-2">
+          <div
+            class="bg-green-600 w-6 h-6 rounded-md border border-neutral-600"
+          ></div>
+          <p>Low</p>
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -101,3 +124,4 @@ import { RouterLink } from 'vue-router';
   ); /* Center the pin at the exact coordinates */
 }
 </style>
+<!-- I would like to visualise some data values in this excel sheet. What is to be done is to show  -->
